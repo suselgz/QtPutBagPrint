@@ -64,8 +64,8 @@ bool QSlipCreate::GenerateQRcode(QString QRtempstr, cv::Mat& img)
 	}
 	QRcode *qrcode;
 	qrcode = QRcode_encodeString(QRtempstr.toStdString().c_str(), 2, QR_ECLEVEL_Q, QR_MODE_8, 1);
-	qint32 temp_width = 180;
-	qint32 temp_height = 180;
+	qint32 temp_width = 280;
+	qint32 temp_height = 280;
 	qint32 qrcode_width = qrcode->width > 0 ? qrcode->width : 1;
 	double scale_x = (double)temp_width / (double)qrcode_width;
 	double scale_y = (double)temp_height / (double)qrcode_width;
@@ -166,17 +166,17 @@ int QSlipCreate::GenerateSlipInfo(SLIP_PRINT_INFO slip_info, cv::Mat& img)
 
 	cv::Mat imageROI;
 	m_SlipImg = m_modelImg.clone();
-// 	imageROI = m_SlipImg(cv::Rect(70, 250, QRimg.cols, QRimg.rows));
-// 	cv::Mat mask = QRimg;
-// 	QRimg.copyTo(imageROI);
-// 	if (m_SlipImg.empty())
-// 	{
-// 		return GENERATE_ERR_::Create_FQimg_failed;
-// 	}
+	imageROI = m_SlipImg(cv::Rect(35, 140, QRimg.cols, QRimg.rows));
+	cv::Mat mask = QRimg;
+	QRimg.copyTo(imageROI);
+	if (m_SlipImg.empty())
+	{
+		return GENERATE_ERR_::Create_FQimg_failed;
+	}
 	QByteArray array;
 	array = Coupons.toLocal8Bit();
 	char *Couchar = array.data();
-	putTextZH(m_SlipImg, Couchar, cv::Point(310, 270), cv::Scalar(0, 0, 0), 40, "Arial", false, false);
+	putTextZH(m_SlipImg, Couchar, cv::Point(450, 270), cv::Scalar(0, 0, 0), 40, "Arial", false, false);
 	putTextZH(m_SlipImg, Couchar, cv::Point(880, 270), cv::Scalar(0, 0, 0), 40, "Arial", false, false);
 
 	if (!slip_info.FHInfo.isEmpty())

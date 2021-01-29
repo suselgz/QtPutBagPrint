@@ -37,6 +37,16 @@
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="Generated Files\ReleaseDLL">
+      <UniqueIdentifier>{ebfb6290-0ab8-42df-8c7e-7d3778e77c82}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\DebugDLL">
+      <UniqueIdentifier>{eaf768ac-922e-499c-807d-70de8c4ea298}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -84,11 +94,23 @@
     <ClCompile Include="GeneratedFiles\Release\moc_QSlipCreate.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="GeneratedFiles\ReleaseDLL\moc_QSlipCreate.cpp">
+      <Filter>Generated Files\ReleaseDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DebugDLL\moc_QSlipCreate.cpp">
+      <Filter>Generated Files\DebugDLL</Filter>
+    </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_QKXSlipCreate.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Release\moc_QKXSlipCreate.cpp">
       <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\ReleaseDLL\moc_QKXSlipCreate.cpp">
+      <Filter>Generated Files\ReleaseDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\DebugDLL\moc_QKXSlipCreate.cpp">
+      <Filter>Generated Files\DebugDLL</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

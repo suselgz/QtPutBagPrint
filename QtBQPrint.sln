@@ -10,17 +10,27 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
+		DebugDLL|x64 = DebugDLL|x64
 		Release|x64 = Release|x64
+		ReleaseDLL|x64 = ReleaseDLL|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{22B9E057-AB35-4611-9189-6432A693F8AF}.Debug|x64.ActiveCfg = Debug|x64
 		{22B9E057-AB35-4611-9189-6432A693F8AF}.Debug|x64.Build.0 = Debug|x64
+		{22B9E057-AB35-4611-9189-6432A693F8AF}.DebugDLL|x64.ActiveCfg = DebugDLL|x64
+		{22B9E057-AB35-4611-9189-6432A693F8AF}.DebugDLL|x64.Build.0 = DebugDLL|x64
 		{22B9E057-AB35-4611-9189-6432A693F8AF}.Release|x64.ActiveCfg = Release|x64
 		{22B9E057-AB35-4611-9189-6432A693F8AF}.Release|x64.Build.0 = Release|x64
+		{22B9E057-AB35-4611-9189-6432A693F8AF}.ReleaseDLL|x64.ActiveCfg = ReleaseDLL|x64
+		{22B9E057-AB35-4611-9189-6432A693F8AF}.ReleaseDLL|x64.Build.0 = ReleaseDLL|x64
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x64.ActiveCfg = Debug|x64
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x64.Build.0 = Debug|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.DebugDLL|x64.ActiveCfg = DebugDLL|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.DebugDLL|x64.Build.0 = DebugDLL|x64
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x64.ActiveCfg = Release|x64
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x64.Build.0 = Release|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.ReleaseDLL|x64.ActiveCfg = ReleaseDLL|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.ReleaseDLL|x64.Build.0 = ReleaseDLL|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
